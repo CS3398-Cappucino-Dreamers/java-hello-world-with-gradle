@@ -32,6 +32,6 @@ public class TestGreeter {
    {
       g.setName("World War");
       assertEquals(g.getName(),"World War");
-      assertEquals(g.sayHello(),"Hello I'm sleepy");
+      assertEquals(g.sayHello(),"Why Hello There :)");
    }
 }
