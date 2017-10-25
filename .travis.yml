@@ -3,7 +3,7 @@ language: java
 
 script:
 
-./gradlew build
+- /gradlew build
   
 #before_install:
 # - pip install coverage
