@@ -31,7 +31,8 @@ public class TestGreeter {
    public void testGreeter() 
    {
       g.setName("World War");
-      assertEquals(g.getName(),"World War");
+      assertEquals(g.getName(),"World  War");
       assertEquals(g.sayHello(),"Hello World War!");
+
    }
 }
