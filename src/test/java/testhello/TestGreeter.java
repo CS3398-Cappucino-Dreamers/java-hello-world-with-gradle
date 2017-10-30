@@ -43,4 +43,11 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello Lori Small!");
    }
 
+   @Test
+   public void newtestLMSGreeterFail() 
+   {
+      g.setName("Lori Small");
+      assertEquals(g.getName(),"Willy Wonka");
+      assertEquals(g.sayHello(),"Hello Willy Wonka!");
+   }
 }
