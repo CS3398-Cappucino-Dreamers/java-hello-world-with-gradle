@@ -32,6 +32,14 @@ public class TestGreeter {
    {
       g.setName("World War");
       assertEquals(g.getName(),"World War");
-      assertEquals(g.sayHello(),"Hello World Chris Woohoo!!!");
+      assertEquals(g.sayHello(),"Hello World War!");
+   }
+   
+   @Test
+   public void newtestMMPGreeterPass() 
+   {
+      g.setName("Michelle Pham");
+      assertEquals(g.getName(),"Michelle Pham");
+      assertEquals(g.sayHello(),"Hello Michelle Pham!");
    }
 }
