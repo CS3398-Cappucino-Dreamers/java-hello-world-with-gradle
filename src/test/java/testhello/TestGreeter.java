@@ -28,10 +28,18 @@ public class TestGreeter {
    }
 	
    @Test
-   public void testGreeter() 
+    public void testGreeter() 
    {
       g.setName("World War");
       assertEquals(g.getName(),"World War");
-      assertEquals(g.sayHello(),"Hello World Chris Woohoo!!!");
+      assertEquals(g.sayHello(),"Hello World War!");
+   }
+   @Test
+   public void newtestJPGreeterPass()
+   {
+	   g.setName("Junit Tests?");
+	   g.setName("Thats not a name");
+	   assertEquals(g.getName(),"Thats not a name");
+       assertEquals(g.sayHello(),"Hello Thats not a name!");
    }
 }
