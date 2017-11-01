@@ -42,4 +42,12 @@ public class TestGreeter {
       assertEquals(g.getName(),"Michelle Pham");
       assertEquals(g.sayHello(),"Hello Michelle Pham!");
    }
+   
+   @Test
+   public void newtestMMPGreeterFail() 
+   {
+      g.setName("Michelle Pham");
+      assertEquals(g.getName(),"Michelle Pham");
+      assertEquals(g.sayHello(),"Hello :)!");
+   }
 }
