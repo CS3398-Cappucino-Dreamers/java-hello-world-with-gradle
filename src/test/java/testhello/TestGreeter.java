@@ -32,6 +32,17 @@ public class TestGreeter {
    {
       g.setName("World War");
       assertEquals(g.getName(),"World War");
-      assertEquals(g.sayHello(),"Hello World Chris Woohoo!!!");
+      assertEquals(g.sayHello(),"Hello World War!");
    }
-}
+   
+   // favorite food test
+   @Test
+   public void newtestcdeGreeterPass()
+   {
+       g.setName("Chris");
+	   g.setFood("pizza");
+	   assertEquals(g.getFood(),"pizza");
+	   assertEquals(g.getName(),"Chris");
+	   assertEquals(g.favoriteFood(),"Chris loves pizza");
+   }
+}      
