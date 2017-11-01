@@ -2,21 +2,16 @@ package hello;
 
 public class Greeter {
 	
-	
   private String name = "";
-  private ArrayList<Object> chrisGreeters;
-
+  private Integer age;
+  
   public Greeter(){
-	 initChris();
+	 
   }
   
-  public initChris(){
-	  chrisGreeters = new ArrayList<Object>();
-	  for(int i = 0; i<10; i++){
-		  chrisGreeters.add(new Greeter()
-	  }
+  public void setAge(int age){
+	  this.age = age;
   }
-  
   
   public String getName() 
   {
@@ -39,18 +34,17 @@ public class Greeter {
        return "Hello " + name + "!";
     }
   }
+
   
-  @Override
-  public String toString(){
-	  System.out.println("Chris says no ya ya no no ya");
-  }
-  
-  public Object chrisGreetsEverybody(){
-	  if(chrisGreeters != null){
-		  for(Greeter chrisGreeter: chrisGreeters){
-			  chrisGreeter.toString();
-		  }
+  public int getAge(){
+	  if(age == null){
+		  return -1;
 	  }
-	  return chrisGreeter;
+	  return age;
   }
 }
+  
+  
+  
+  
+  

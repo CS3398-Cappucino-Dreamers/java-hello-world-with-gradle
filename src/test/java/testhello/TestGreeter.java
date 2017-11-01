@@ -35,9 +35,11 @@ public class TestGreeter {
       assertEquals(g.sayHello(),"Hello World War!");
    }
    
+   // Tests age variable and its getter and setter.
    @Test
-   public void crazyTest()
+   public void newtestwbhGreeterPass()
    {
-	   assertEquals(g.chrisGreetsEverybody, g.chrisGreetsEverybody);
+	   g.setAge(22);
+	   assertEquals(g.getAge(), 22);
    }
 }
