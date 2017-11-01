@@ -45,4 +45,13 @@ public class TestGreeter {
 	   assertEquals(g.getName(),"Chris");
 	   assertEquals(g.favoriteFood(),"Chris loves pizza");
    }
+   
+   // fail favorite food test
+   @Test
+   public void newtestcdeGreeterFail()
+   {
+       g.setName("Chris");
+	   g.setFood("pizza");
+	   assertEquals(g.favoriteFood(),"Dan loves pizza");
+   }
 }      
