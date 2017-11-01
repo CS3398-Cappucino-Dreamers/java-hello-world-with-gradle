@@ -42,4 +42,11 @@ public class TestGreeter {
 	   g.setAge(22);
 	   assertEquals(g.getAge(), 22);
    }
+   
+   @Test
+   public void newtestwbhGreeterFail(){
+	   g.setAge(99);
+	   g.setAge(50);
+	   assertEquals(g.getAge(), 99);
+   }
 }
