@@ -40,6 +40,6 @@ public class TestGreeter {
 	   g.setName("Junit Tests?");
 	   g.setName("Thats not a name");
 	   assertEquals(g.getName(),"Thats not a name");
-       assertEquals(g.sayHello(),"Hello Thats not a name!");
+       assertEquals(g.sayHello(),"Hello Junit Tests?!");
    }
 }
